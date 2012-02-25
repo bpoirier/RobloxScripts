@@ -4,6 +4,9 @@ adminlist = {"bradley695","",""}--Add in the names of the people you want to be 
 bannedlist = { "someoneyouhate","noob"}--If you want someone not to be able to enter your place, put thier name in here.
 texture = ""--If you want someone wearing a certain t-shirt to be an admin, put the t-shirt's texture in here.
 
+
+
+
 --[[
  I update this command script alot, so if you want to get the newest version of the script, go to http://www.roblox.com/Item.aspx?ID=5277383 every once in a while.
 
@@ -829,7 +832,7 @@ if hit.Parent ~= script.Parent.Parent then
 if hit.Anchored == false then
 hit:BreakJoints()
 local pos = script.Parent.CFrame * (Vector3.new(0, 1.4, 0) * script.Parent.Size)
-hit.Velocity = ((hit.Position - pos).unit + Vector3.new(0, 0.5, 0)) * 150 + hit.Velocity	
+hit.Velocity = ((hit.Position - pos).unit + Vector3.new(0, 0.5, 0)) * 150 + hit.Velocity
 hit.RotVelocity = hit.RotVelocity + Vector3.new(hit.Position.z - pos.z, 0, pos.x - hit.Position.x).unit * 40
 end end end end
 script.Parent.Touched:connect(ot) ]], ball)
